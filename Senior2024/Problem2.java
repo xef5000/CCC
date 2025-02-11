@@ -31,17 +31,28 @@ public class Problem2 {
         }
 
         for (int j = 0; j <= strings.length()/2; j+=2) {
-            char c1 = strings.charAt(j);
-            char c2 = strings.charAt(j+1);
-            if (c1 != c2) {
-                int c1p = letters[c1 - 'a'];
-                int c2p = letters[c2 - 'a'];
-                if ((c1p > 1 && c2p > 1) ||
-                (c1p == c2p)) return 'F';
-            } else
-                return 'F';
+            Character F = isBad(strings, letters);
+            if (F != null) return F;
         }
 
+        if (strings.length() % 2 != 0)  {
+            Character F = isBad(strings, letters);
+            if (F != null) return F;
+        };
+
         return 'T';
+    }
+
+    private static Character isBad(String strings, int[] letters) {
+        char c1 = strings.charAt(strings.length()-1);
+        char c2 = strings.charAt(strings.length()-2);
+        if (c1 != c2) {
+            int c1p = letters[c1 - 'a'];
+            int c2p = letters[c2 - 'a'];
+            if ((c1p > 1 && c2p > 1) ||
+                    (c1p == c2p)) return 'F';
+        } else
+            return 'F';
+        return null;
     }
 }
