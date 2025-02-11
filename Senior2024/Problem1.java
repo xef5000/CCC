@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Problem can be found here: <a href="https://cemc.uwaterloo.ca/sites/default/files/documents/2024/2024CCCSrProblems.html">waterloo</a>
  * */
-public class Main {
+public class Problem1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt(); // Number of people in the circle
