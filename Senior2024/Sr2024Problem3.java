@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Problem can be found here: <a href="https://cemc.uwaterloo.ca/sites/default/files/documents/2024/2024CCCSrProblems.html">waterloo</a>
  * */
-public class Problem3 {
+public class Sr2024Problem3 {
     /**
      * Determine if the arrays can be the same using only leftSwipe and rightSwipe
      * Rule #1: If the arrays are the same, return true

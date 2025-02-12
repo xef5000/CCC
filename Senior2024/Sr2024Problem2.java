@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Problem can be found here: <a href="https://cemc.uwaterloo.ca/sites/default/files/documents/2024/2024CCCSrProblems.html">waterloo</a>
  * */
-public class Problem2 {
+public class Sr2024Problem2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt(); // Number of strings
